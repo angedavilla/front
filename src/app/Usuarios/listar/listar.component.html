@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <h1 class="text-center">Usuarios</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Fecha de cumpleaños</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Editar/Eliminar</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let list of usuarios.data; let num = index">
+            <tr>
+                <th>{{list.id}}</th>
+                <td>{{list.nombre}}</td>
+                <td>{{list.apellido}}</td>
+                <td>{{list.email}}</td>
+                <td>{{list.fecha_de_cumpleanos}}</td>
+                <td>{{list.estado}}</td>
+                <td class="text-center">
+                    <button class="btn btn-primary px-3 mx-2">Editar</button>
+                    <button class="btn btn-danger" (click)="Eliminar(list.id)">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
