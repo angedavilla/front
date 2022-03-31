@@ -1,6 +1,5 @@
 ## Libraries
 Node modules 
-npm i
+- npm i
 NgBootstrap
-npm i ng-bootstrap
- 
+- npm i ng-bootstrap
